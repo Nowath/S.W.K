@@ -9,17 +9,21 @@ import { a, img } from "framer-motion/client";
 function Homepage() {
     const [banner, setBanner] = useState(Banner);
     const Link_Image = [
-        {image:"https://sura.ac.th/wp-content/uploads/2024/08/dbschool-link-stu.jpg",
-            url: "http://dbsch2567a.sura.ac.th/student/"
+        {
+            image:"https://sura.ac.th/wp-content/uploads/2024/08/dbschool-link-stu.jpg",
+            url: "http://dbsch2567a.sura.ac.th/student/",
         },
-        {image:"https://sura.ac.th/wp-content/uploads/2024/08/dbschool-link-tc.jpg",
-            url:"http://dbsch2567a.sura.ac.th/"
+        {
+            image:"https://sura.ac.th/wp-content/uploads/2024/08/dbschool-link-tc.jpg",
+            url:"http://dbsch2567a.sura.ac.th/",
         },
-        {image:"https://sura.ac.th/wp-content/uploads/2024/08/obeccontentcenter-link-1.png",
-            url:"https://contentcenter.obec.go.th/"
+        {
+            image:"https://sura.ac.th/wp-content/uploads/2024/08/obeccontentcenter-link-1.png",
+            url:"https://contentcenter.obec.go.th/",
         },
-        {image:"https://sura.ac.th/wp-content/uploads/2024/08/kruching-banne2r-1-300x52-1.jpg",
-            url:"https://sura.ac.th/chingphum-chaisri/"
+        {
+            image:"https://sura.ac.th/wp-content/uploads/2024/08/kruching-banne2r-1-300x52-1.jpg",
+            url:"https://sura.ac.th/chingphum-chaisri/",
         },
     ];
     const Link_Image2 = [

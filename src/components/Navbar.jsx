@@ -14,7 +14,7 @@ function Navbar() {
             <div className="flex justify-between bg-[#9f9f9f55] backdrop-blur-lg items-center h-16 rounded-md">
                 <div className="logo flex items-center">
                     <img className=" w-14" src={SWKLOGO} alt="" />
-                    <h1 className="text-xl">Surawittayakarn</h1>
+                    <h1 className="text-xl">SurawittaNowath</h1>
                 </div>
                 <ul className="hidden lg:flex cursor-pointer h-full ">
                     <motion.a
