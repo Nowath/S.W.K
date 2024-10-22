@@ -205,6 +205,77 @@ function Navbar() {
                             </li>
                         ))}
                         <li className="w-full">
+                            <div
+                                className={` w-full flex justify-center items-center h-16 hover:bg-slate-200 transition-all rounded-lg`}
+                                onClick={HandelClick1}
+                            >
+                                ข้อมูลพื้นฐานของโรงเรียน
+                                <div
+                                    className={`${
+                                        openDrop1 ? `rotate-180` : `rotate-0`
+                                    } transition-all`}
+                                >
+                                    <ChevronDown />
+                                </div>
+                            </div>
+                            <div className={`${openDrop1 ? `flex` : `hidden`}`}>
+                                <Link
+                                    className={` w-full flex justify-center items-center h-16 cursor-pointer bg-[rgb(243,243,243)]`}
+                                    to="/about"
+                                >
+                                    ผู้บริหารโรงเรียนสุรวิทยาคาร
+                                </Link>
+                            </div>
+                        </li>
+                        <li className="w-full">
+                            <div
+                                className={` w-full flex justify-center items-center h-16 hover:bg-slate-200 transition-all rounded-lg`}
+                                onClick={HandelClick2}
+                            >
+                                ห้องเรียนออนไลน์
+                                <div
+                                    className={`${
+                                        openDrop2 ? `rotate-180` : `rotate-0`
+                                    } transition-all`}
+                                >
+                                    <ChevronDown />
+                                </div>
+                            </div>
+                            <div
+                                className={`${
+                                    openDrop2 ? `flex` : `hidden`
+                                } flex-col`}
+                            >
+                                <a
+                                    className={` w-full flex justify-center items-center h-16 cursor-pointer bg-[rgb(243,243,243)]`}
+                                    href="http://krukawita.sura.ac.th/"
+                                >
+                                    ครูกวิตา อินธิสาร
+                                </a>
+                                <hr />
+                                <a
+                                    className={` w-full flex justify-center items-center h-16 cursor-pointer bg-[rgb(243,243,243)]`}
+                                    href="http://krupaphada.sura.ac.th/"
+                                >
+                                    ครูปภาดา เจียมเมืองปัก
+                                </a>
+                                <hr />
+                                <a
+                                    className={` w-full flex justify-center items-center h-16 cursor-pointer bg-[rgb(243,243,243)]`}
+                                    href="http://kruwatchara.sura.ac.th/"
+                                >
+                                    ครูวัชระ โกติรัมย์
+                                </a>
+                                <hr />
+                                <a
+                                    className={` w-full flex justify-center items-center h-16 cursor-pointer bg-[rgb(243,243,243)]`}
+                                    href="http://kruparnpitcha.sura.ac.th/e-learning/"
+                                >
+                                    ครูปารย์พิชชา ชีวาพรไพศาล
+                                </a>
+                            </div>
+                        </li>
+                        <li className="w-full">
                             <Link
                                 className=" w-full flex justify-center items-center h-16 hover:bg-slate-200 transition-all rounded-lg"
                                 onClick={(e) => HandelClick()}
