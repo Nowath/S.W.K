@@ -222,6 +222,7 @@ function Navbar() {
                                 <Link
                                     className={` w-full flex justify-center items-center h-16 cursor-pointer bg-[rgb(243,243,243)]`}
                                     to="/about"
+                                    onClick={(e) => HandelClick()}
                                 >
                                     ผู้บริหารโรงเรียนสุรวิทยาคาร
                                 </Link>
@@ -249,6 +250,7 @@ function Navbar() {
                                 <a
                                     className={` w-full flex justify-center items-center h-16 cursor-pointer bg-[rgb(243,243,243)]`}
                                     href="http://krukawita.sura.ac.th/"
+                                    onClick={(e) => HandelClick()}
                                 >
                                     ครูกวิตา อินธิสาร
                                 </a>
@@ -256,6 +258,7 @@ function Navbar() {
                                 <a
                                     className={` w-full flex justify-center items-center h-16 cursor-pointer bg-[rgb(243,243,243)]`}
                                     href="http://krupaphada.sura.ac.th/"
+                                    onClick={(e) => HandelClick()}
                                 >
                                     ครูปภาดา เจียมเมืองปัก
                                 </a>
@@ -263,6 +266,7 @@ function Navbar() {
                                 <a
                                     className={` w-full flex justify-center items-center h-16 cursor-pointer bg-[rgb(243,243,243)]`}
                                     href="http://kruwatchara.sura.ac.th/"
+                                    onClick={(e) => HandelClick()}
                                 >
                                     ครูวัชระ โกติรัมย์
                                 </a>
@@ -270,6 +274,7 @@ function Navbar() {
                                 <a
                                     className={` w-full flex justify-center items-center h-16 cursor-pointer bg-[rgb(243,243,243)]`}
                                     href="http://kruparnpitcha.sura.ac.th/e-learning/"
+                                    onClick={(e) => HandelClick()}
                                 >
                                     ครูปารย์พิชชา ชีวาพรไพศาล
                                 </a>
