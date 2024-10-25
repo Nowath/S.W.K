@@ -84,7 +84,7 @@ function Navbar() {
                             } flex flex-col absolute left-0 transition-all rounded-md overflow-hidden bg-white w-full`}
                             onClick={(e) => HandelClick1()}
                         >
-                            <Link className=" px-4 py-4" to="/about">
+                            <Link className=" px-4 py-4" to="/director">
                                 <h1>ผู้บริหารโรงเรียนสุรวิทยาคาร</h1>
                             </Link>
                         </div>
@@ -221,7 +221,7 @@ function Navbar() {
                             <div className={`${openDrop1 ? `flex` : `hidden`}`}>
                                 <Link
                                     className={` w-full flex justify-center items-center h-16 cursor-pointer bg-[rgb(243,243,243)]`}
-                                    to="/about"
+                                    to="/director"
                                     onClick={(e) => HandelClick()}
                                 >
                                     ผู้บริหารโรงเรียนสุรวิทยาคาร
