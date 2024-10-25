@@ -23,7 +23,7 @@ function Navbar() {
         { text: "การประเมิน ITA ปี 2567", link: "/about" },
     ];
     return (
-        <div className="w-full px-10 min-h-16 py-3 sticky top-0 z-50">
+        <div className="w-full px-4 md:px-10 min-h-16 py-3 sticky top-0 z-50">
             <div className="flex justify-between bg-[#9f9f9f55] backdrop-blur-lg items-center h-16 rounded-md">
                 <div className="logo flex items-center">
                     <img className=" w-14" src={SWKLOGO} alt="" />

@@ -15,7 +15,7 @@ function App() {
     return (
         <div className="w-screen min-h-screen flex flex-col bg-gradient-to-tr from-yellow-200 to-green-300 bg-cover bg-center bg-fixed">
             <Navbar />
-            <div className="mx-10 ">
+            <div className=" px-6 md:mx-10 ">
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
