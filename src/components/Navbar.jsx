@@ -4,6 +4,7 @@ import { motion, spring } from "framer-motion";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
+import { Twirl as Hamburger } from "hamburger-react";
 
 function Navbar() {
     const [openNav, setOpenNav] = useState(false);
@@ -183,9 +184,15 @@ function Navbar() {
                         duration: 3,
                     }}
                     onClick={(e) => HandelClick()}
-                    className="flex justify-center items-center px-5 lg:hidden cursor-pointer h-full hover:bg-gray-200 transition-colors duration-300 rounded-md"
+                    className="flex justify-center items-center lg:hidden cursor-pointer mx-5 hover:bg-gray-200 transition-colors duration-300 rounded-md"
                 >
-                    <RxHamburgerMenu size={30} />
+                    <Hamburger
+                        toggle={openNav}
+                        toggled={openNav}
+                        rounded
+                        className="px-5 h-full"
+                        size={30}
+                    />
                 </motion.div>
                 <div
                     className={`${
