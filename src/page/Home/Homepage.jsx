@@ -35,9 +35,13 @@ function Homepage() {
     ];
     return (
         <div>
-            <div className="logo w-full flex justify-center bg-gradient-to-tr from-yellow-200 to-green-300 mix-blend-screen rounded-xl">
+            <a
+                href="https://drive.google.com/drive/folders/1_t3BWYauWJKXx4C4Akv0f5zljUWi_ZUQ"
+                target="_blank"
+                className="logo w-full flex justify-center bg-gradient-to-tr from-yellow-200 to-green-300 mix-blend-screen rounded-xl"
+            >
                 <img className=" w-1/3" src={SWKLOGO} alt="" />
-            </div>
+            </a>
             <motion.section
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
