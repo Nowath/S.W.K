@@ -17,7 +17,7 @@ function Card() {
             {data ? (
                 data.map((items) => (
                     <div className=" flex-1 min-w-72 bg-[#bcffb6c6] gap-2 flex flex-col items-center rounded-lg justify-between py-6 px-4 backdrop-blur-2xl">
-                        <div className="flex flex-col justify-center items-center">
+                        <div className="flex gap-y-3 flex-col justify-center items-center">
                             <img
                                 className=" w-11/12 rounded-lg"
                                 src={imgBG}

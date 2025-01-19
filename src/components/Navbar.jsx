@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SWKLOGO from "../assets/SWKLOGO.png";
 import { motion, spring } from "framer-motion";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -15,14 +15,24 @@ function Navbar() {
     }
     function HandelClick1() {
         setOpenDrop1(!openDrop1);
+        if(openDrop2 == true){
+            setOpenDrop2(!openDrop2);
+        }
     }
     function HandelClick2() {
         setOpenDrop2(!openDrop2);
+        if(openDrop1 == true){
+            setOpenDrop1(!openDrop1);
+        }
     }
     const NavbarList = [
         { text: "Home", link: "/" },
         { text: "การประเมิน ITA ปี 2567", link: "/about" },
     ];
+    const TeacherList = [
+        {text: 'ผู้บริหารโรงเรียนสุรวิทยาคาร' , link: '/director'},
+        {text: 'คุณครูโรงเรียนสุรวิทยาคาร' , link: '/director'}
+    ]
     return (
         <div className="w-full px-4 md:px-10 min-h-16 py-3 sticky top-0 z-50">
             <div className="flex justify-between bg-[#9f9f9f55] backdrop-blur-lg items-center h-16 rounded-md">
@@ -81,13 +91,15 @@ function Navbar() {
                             className={`${
                                 openDrop1
                                     ? `opacity-100 top-20`
-                                    : `opacity-0 top-[-3rem]`
+                                    : `opacity-0 top-[-10rem]`
                             } flex flex-col absolute left-0 transition-all rounded-md overflow-hidden bg-white w-full`}
                             onClick={(e) => HandelClick1()}
                         >
-                            <Link className=" px-4 py-4" to="/director">
-                                <h1>ผู้บริหารโรงเรียนสุรวิทยาคาร</h1>
-                            </Link>
+                            {TeacherList.map((item) => (
+                                <Link className=" px-4 py-4" to={`${item.link}`}>
+                                    <h1>{item.text}</h1>
+                                </Link>
+                            ))}
                         </div>
                     </div>
                     <div className=" select-none relative h-full">
@@ -229,7 +241,10 @@ function Navbar() {
                                 <Link
                                     className={` w-full flex justify-center items-center h-16 cursor-pointer bg-[rgb(243,243,243)]`}
                                     to="/director"
-                                    onClick={(e) => HandelClick()}
+                                    onClick={(e) => {
+                                        HandelClick1()
+                                        HandelClick()
+                                    }}
                                 >
                                     ผู้บริหารโรงเรียนสุรวิทยาคาร
                                 </Link>
